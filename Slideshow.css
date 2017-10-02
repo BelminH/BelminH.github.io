@@ -1,0 +1,29 @@
+:root {
+    --slideshow-bg: wheat; 
+}
+
+#Innhold {
+    width: 100%;
+    height: 550px;
+}
+
+#slideshow {
+    background: url(../Div/breaking.png);
+    position: relative;
+    left: 2em;
+    top: 7em;
+    width: calc(100% - 4em);
+    height: calc(100% - 4em);
+    border: 5px solid gray;
+    border-radius: 2em;
+    background-color: var(--slideshow-bg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    animation: slideshow 6s ease-in-out infinite alternate;
+}
+
+@keyframes slideshow {
+    0% { background-image: url(../Div/breaking.png)}
+    48% { background-image: url(../Div/trump.png)}
+    76% { background-image: url(../Div/putin.png)}
+}

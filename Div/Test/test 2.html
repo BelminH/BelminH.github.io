@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link href="test 2.css" rel="stylesheet">
+</head>
+<body>
+<div class="testbox">
+  <h1>Registration</h1>
+
+  <form action="/">
+    <label>Fornavn<input id="Etternavn" type="text"> </label>
+    <label>Etternavn<input id="Etternavn" type="text"> </label>
+    <label>Passord<input type="password"> </label>
+  <div class="gender">
+    <input type="radio" value="None" id="male" name="gender" checked/>
+    <label for="male" class="radio" chec>Male</label>
+    <input type="radio" value="None" id="female" name="gender" />
+    <label for="female" class="radio">Female</label>
+   </div> 
+   <a href="#" class="button">Register</a>
+  </form>
+</div>
+
+<script>
+
+    let btn = document.getElementById("button");
+    btn.addEventListener("click", lagreData);
+    function lagreData () {
+        let Name = document.getElementById("Name").value;
+        let Etternavn = document.getElementById("Etternavn").value;
+        alert("Kunne ikke sende, sjekk tilkobling din" + " " + Name + " " + Etternavn);
+    }
+</script>
+
+</body>

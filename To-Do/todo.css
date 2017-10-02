@@ -1,0 +1,18 @@
+
+#innhold {
+    position: absolute;
+    left: 0%;
+    bottom: 15%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: whitesmoke;
+}
+
+#Slider {
+    position: absolute;
+    top: 5.9%;
+    height: 70%;
+    right: 0%;
+    width: 40%;
+}

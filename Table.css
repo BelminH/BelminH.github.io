@@ -1,0 +1,26 @@
+#table {
+    top:20%;
+    left: 30%;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+}
+table {
+    border: solid 2px gray;
+    border-collapse: collapse;
+    }
+     
+    th,td {
+    padding-left:24px;
+    }
+    th {
+    background: wheat;
+    }
+     
+    tr:nth-child(odd) {
+    background: rgba(100,10,10,0.2);
+    }
+     
+    td:nth-child(odd) {
+    background: rgba(49, 165, 165, 0.20);
+    }

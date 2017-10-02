@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Meny small.css">
+    <link rel="stylesheet" href="Registrer.css">
+</head>
+
+<body>
+    <center>
+        <div id="registerform">
+            <h5>Register deg nå</h5>
+            <label> <input id="Fornavn" type="text" placeholder="Fornavn"> </label>
+            <label> <input id="Etternavn" type="text" placeholder="Etternavn"> </label>
+            <label> <input id="Email" type="text" placeholder="Email"> </label>
+            <label> <input id="Passord" type="password" placeholder="Passord"> </label>
+
+            <label> <input id="btn" type="button" value="Register"> </label>
+    </center>
+    </form>
+
+    </div>
+
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", lagreData);
+        function lagreData() {
+            let Fornavn = document.getElementById("Fornavn").value;
+            alert("Kunne ikke sende, sjekk tilkobling din" + " " + Fornavn);
+        }
+    </script>
+
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="Slideshow.html">Slideshow</a>
+            </li>
+            <li>
+                <a href="Tabell.html">Tabell</a>
+            </li>
+            <li>
+                <a href="Video.html">Video</a>
+            </li>
+            <li>
+                <a href="Parallax + Nav.html">Tilbake</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
