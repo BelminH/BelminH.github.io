@@ -1,1 +1,0 @@
-# belminh.github.io
