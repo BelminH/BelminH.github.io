@@ -18,12 +18,12 @@ article {
 }
 
 #liste {
-    width: 90vw;
+    width:75vw;
     height: 50vh;
     border: 2px solid red;
     min-height: 20vw;
 }
 
 .kunde {
-    background-color: whitesmoke
+    background-color: whitesmoke;
 }
