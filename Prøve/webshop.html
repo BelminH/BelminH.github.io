@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="webshop.css">
+</head>
+
+<body>
+    <center>
+        <div id="registerform">
+            <h5>Register deg nå</h5>
+            <label>
+                <input id="Varer" type="text" placeholder="Velg varer:"> </label>
+            <label>
+                <input id="Antall" type="number" placeholder="Antall:"> </label>
+            <label>
+                <input id="Adresse" type="text" placeholder="Adresse:"> </label>
+            <label>
+                <input id="Betaling" type="texr" placeholder="Betaling:"> </label>
+            <input type="radio" value="Visa"> Visa
+            <input type="radio" value="Mastercard"> Mastercard
+            <input type="radio" value="Bitcoin"> Bitcoin
+            <br>
+            <label>
+                <input id="Gave" type="text" placeholder="Legg en beskjed til gaven:"> </label>
+            <input type="radio" value="svar"> Ja
+            <input type="radio" value="svar"> Nei
+            <br>
+            <label>
+                <input id="btn" type="button" value="Register"> </label>
+    </center>
+    </form>
+
+    </div>
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", lagreData);
+        function lagreData() {
+            let Varer = document.getElementById("Varer").value;
+            alert("Kunne ikke bestille varen din, beklager");
+        }
+    </script>
+</body>
+
+</html>

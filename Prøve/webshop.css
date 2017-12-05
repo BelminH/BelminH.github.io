@@ -1,0 +1,90 @@
+#registerform {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    background: wheat;
+    width: 100%;
+    padding: 30px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+}
+
+#registerform h5 {
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+#Varer {
+    background: wheat;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: white;
+}
+#Antall {
+    background: wheat;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: white;
+}
+#Adresse {
+    background: wheat;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: white;
+}
+#Betaling {
+    background: wheat;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    width: 61%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: white;
+}
+#Gave {
+    background: wheat;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    width: 72.5%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: white;
+}
+
+#btn {
+    width: 91%;
+    margin: 0 16px;
+    background: #1f53c5;
+    border: 0;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#btn:hover {
+    width: 91%;
+    margin: 0 16px;
+    background: #00309B;
+    border: 0;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+}
