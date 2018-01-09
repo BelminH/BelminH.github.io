@@ -1,0 +1,36 @@
+.box
+{
+    position: relative;
+	width: 200px;
+    padding: 5px;
+    height: 2em;
+    margin: 1em;
+    border: solid 1px rgba(0, 0, 0, 0.105);
+    background-color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.box:before, .box:after
+{
+	position: absolute;
+	width: 40%;
+	height: 10px;
+	content: ' ';
+	left: 12px;
+	bottom: 12px;
+	background: transparent;
+	transform: skew(-5deg) rotate(-5deg);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	z-index: -1;
+} 
+
+.box:after
+{
+	left: auto;
+	right: 12px;
+	transform: skew(5deg) rotate(5deg);
+}
