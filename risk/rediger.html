@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="rediger.css">
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="rediger.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div>
+            <h4>Rediger land</h4>
+            <form>
+                <br>Land
+                <input id="land" type="text">
+                <br>Region
+                <input id="region" type="text">
+                <p>
+                    <button type="button" id="lagreland">
+                        Legg til land</button>
+                </p>
+            </form>
+        </div>
+        <div>
+            <h4>Rediger Kort</h4>
+            <form>
+                <br>Kort (region)
+                <input id="kort" type="text">
+                <br>Antall
+                <input id="antallnye" type="number">
+                <p>
+                    <button type="button" id="lagrekort">
+                        Legg til land</button>
+                </p>
+            </form>
+        </div>
+        <div>
+            <h4>Rediger Spiller</h4>
+            <form>
+                <br>Brukernavn
+                <input id="bruker" type="text">
+                <br>Alder
+                <input id="alder" type="number">
+                <br>Farge
+                <input id="farge" type="text">
+                <br>Navn
+                <input id="navn" type="text">
+                <p>
+                    <button type="button" id="lagrespiller">
+                        Legg til spiller</button>
+                </p>
+            </form>
+        </div>
+        <div id="sonic">
+            <div id="sprite"></div>
+        </div>
+
+    </div>
+
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>
