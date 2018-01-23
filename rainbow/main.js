@@ -1,3 +1,5 @@
+/*hvordan lage kommentarer*/
+
 const btn = document.getElementById('button');
 const rainbow = 
 ['red', 'orange', 'yellow', 'blue', 'rebeccapurple', 'violet']
