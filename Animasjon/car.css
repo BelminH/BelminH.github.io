@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
     background-position-x: 0;
     background-position-y: -25px;
-    animation: drive 3s forwards, drive2 3s 4s forwards;
+    animation: kjøring 3s forwards, drive2 3s 4s forwards, drive3 3s 6s;
 }
 
 #box {
@@ -35,16 +35,39 @@
     background: grey;
     border-radius: 3px;
 }
-
-
-@keyframes drive {
-    100%{ left:70vw; }
+#worker{
+    position: absolute;
+    background-image: url(worker.png);
+    background-repeat: no-repeat;
+    left: 120vw;
+    bottom: -57vw;
+    width: 120px;
+    height: 350px;
+    border-radius: 3px;
+    animation: worker 3s 6s forwards;
 }
 
+/*kjøring frem*/
+@keyframes kjøring {
+    0%{ left: 0; top: calc(100.8vh - 120px); }
+    100%{ left: 71vw; top: calc(100.8vh - 120px); }
+}
+/*liftup av bilen*/
 @keyframes drive2 {
     0%{ left: 71vw; bottom: 0px }
-    50%{ left: 909px; bottom: 150px;}
+    50%{ left: 909px; top: 80px;}
     100%{ left: 909px; bottom: 0px;}
+}
+/*kjøring tilbake*/
+@keyframes drive3 {
+    0%{ left: 71vw; top: calc(100.8vh - 120px); background-image: url("918-small.png"); height: 600px; width: 300px; }
+    100%{ left: 0px; top: calc(100.8vh - 120px); background-image: url("918-small.png"); height: 600px; width: 300px; }
+}
+/*worker*/
+@keyframes worker {
+    0%{ left: 120vw; bottom: 0px }
+    50%{ left: 71vw; bottom: 0px }
+    100%{ left: 120vw; bottom: 0px }
 }
 
 @keyframes liftup {
