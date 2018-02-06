@@ -1,0 +1,14 @@
+main {
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    grid-column-gap: 15px;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px,auto);
+}
+article {
+    box-shadow: 0 0 5px #ccc;
+}
+
+h1 {
+    text-align: center;
+}
