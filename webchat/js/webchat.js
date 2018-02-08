@@ -28,4 +28,4 @@ function setup() {
         `;
   }
   ref.on("child_added", visMedlemmer);
-}
+} 
