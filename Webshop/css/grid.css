@@ -1,0 +1,13 @@
+main {
+    display: grid;
+    grid-template-columns: 313px 313px 313px 310px;
+    grid-column-gap: 15px;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(250px, auto);
+    padding: 0.2%;
+}
+
+article {
+    background-color: orange;
+    border-radius: 25px;
+}

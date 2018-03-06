@@ -1,0 +1,35 @@
+#bilde1 {
+    background-image: url("../bilder/i3.jpg");
+    background-size:313px 313px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 313px;
+    width: 313px;
+}
+
+#bilde2 {
+    background-image: url("../bilder/i5.png");
+    background-size:313px 313px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 313px;
+    width: 313px;
+}
+
+#bilde3 {
+    background-image: url("../bilder/i7.png");
+    background-size:313px 313px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 313px;
+    width: 313px;
+}
+
+#bilde4 {
+    background-image: url("../bilder/i9.jpg");
+    background-size:313px 313px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 313px;
+    width: 313px;
+}

@@ -10,7 +10,6 @@ function setup() {
   };
   firebase.initializeApp(config);
   let divListe = document.getElementById("liste");
-
   let ref = firebase.database().ref("medlemmer");
 
   function visMedlemmer(snapshot) {
