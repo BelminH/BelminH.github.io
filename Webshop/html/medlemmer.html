@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/grid.css">
+    <title>Document</title>
     <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/webshop.css">
+    <script src="../js/medlemmer.js"></script>
+    <link rel="stylesheet" href="../css/kontakt.css">
 </head>
 
 <body>
     <div class="nav">
         <ul>
             <li class="cpu">
-                <a href="#">CPU</a>
+                <a href="webshop.html">CPU</a>
             </li>
             <li class="Logg inn">
                 <a href="logg inn.html">Logg inn</a>
@@ -30,22 +31,21 @@
             </li>
     </div>
 
-    <main>
-        <article>
-            <div id="bilde1"></div>
-        </article>
-        <article>
-            <div id="bilde2"></div>
-        </article>
-        <article>
-            <div id="bilde3"></div>
-        </article>
-        <article>
-            <div id="bilde4"></div>
-        </article>
-    </main>
+    <head>
+        <h1>Medlemmer</h1>
+    </head>
 
+    <article>
+        <div id="liste" class="medlemmer">
 
+        </div>
+    </article>
+
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
+    <script>
+        setup();
+    </script>
 </body>
 
 </html>

@@ -7,8 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/nav.css">
     <script src="../js/logg inn.js"></script>
+    <link rel="stylesheet" href="../css/logg inn.css">
     <title>Logg inn</title>
 </head>
+
 
 <body>
     <div class="nav">
@@ -22,24 +24,62 @@
             <li class="Kontakt">
                 <a href="kontakt.html">Kontakt</a>
             </li>
+            <li class="Info">
+                <a href="info.html">Info</a>
+            </li>
+            <li class="Medlemmer">
+                <a href="medlemmer.html">Medlemmer</a>
+            </li>
     </div>
 
-    <div id="login" class="hidden">
-        <p>Enter an email and password below and either sign in to an existing account or sign up</p>
-        <input type="text" id="email" name="email" placeholder="Email">
-        <input type="password" id="password" name="password" placeholder="Password">
-        <button id="sign-in" name="signin">Sign In</button>
-        <button id="sign-up" name="signup">Sign Up</button>
-    </div>
-    <!-- Container where we'll display the user details -->
-    <div id="status" class="hidden">
+    <h2>Logg inn</h2>
 
-        <button id="signout" name="signout">Sign out</button>
-        <button id="mapper">Design a map</button>
-        <div id="games">
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
-        </div>
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="../bilder/oasis.jpg" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname">
+                    <b>Username</b>
+                </label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw">
+                    <b>Password</b>
+                </label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Husk meg
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                </span>
+            </div>
+        </form>
     </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 
 </html>

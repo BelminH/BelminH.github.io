@@ -1,5 +1,19 @@
 main {
     display: grid;
+    grid-template-columns: fill;
+    grid-column-gap: 15px;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(450px, auto);
+    padding: 0.2%;
+}
+
+article {
+    background-color: lightgrey;
+    border-radius: 25px;
+}
+
+/*main {
+    display: grid;
     grid-template-columns: 313px 313px 313px 310px;
     grid-column-gap: 15px;
     grid-gap: 5px;
@@ -8,6 +22,6 @@ main {
 }
 
 article {
-    background-color: orange;
+    background-color: lightgrey;
     border-radius: 25px;
-}
+}*/
