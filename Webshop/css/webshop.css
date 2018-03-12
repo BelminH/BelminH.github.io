@@ -33,3 +33,113 @@
     height: 448px;
     width: 435px;
 }
+
+p {
+    position: absolute;
+    font-size: 1.1em;
+    left: 450px;
+    height: 45px;
+    padding: 4px;
+    color: black;
+}
+
+#btn1 {
+    position: absolute;
+    left: 680px;
+    width: 20%;
+    margin: 0 16px;
+    background: #144D53;
+    border: 0;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    top: 22%;
+}
+
+#btn1:hover {
+    position: absolute;
+    width: 20%;
+    margin: 0 16px;
+    background: rgb(34, 37, 41);
+    border: 0;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    top: 22%;
+}
+
+#btn2 {
+    position: absolute;
+    left: 680px;
+    width: 20%;
+    margin: 0 16px;
+    background: #144D53;
+    border: 0;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    top: 47%;
+}
+
+#btn2:hover {
+    position: absolute;
+    width: 20%;
+    margin: 0 16px;
+    background: rgb(34, 37, 41);
+    border: 0;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    top: 47%;
+}
+
+#btn3 {
+    position: absolute;
+    left: 680px;
+    width: 20%;
+    margin: 0 16px;
+    background: #144D53;
+    border: 0;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    top: 70%;
+}
+
+#btn3:hover {
+    position: absolute;
+    width: 20%;
+    margin: 0 16px;
+    background: rgb(34, 37, 41);
+    border: 0;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    top: 70%;
+}
+
+#btn4 {
+    position: absolute;
+    left: 680px;
+    width: 20%;
+    margin: 0 16px;
+    background: #144D53;
+    border: 0;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    bottom: 4%;
+}
+
+#btn4:hover {
+    position: absolute;
+    width: 20%;
+    margin: 0 16px;
+    background: rgb(34, 37, 41);
+    border: 0;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    bottom: 4%;
+}
+

@@ -1,0 +1,83 @@
+#registerform {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background: #364F6B;
+    width: 76.3em;
+    padding: 30px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+}
+
+#registerform h5 {
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+#Fornavn {
+    background: rgb(214, 231, 252);
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: black;
+}
+
+#Etternavn {
+    background: rgb(214, 231, 252);
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: black;
+}
+
+#Email {
+    background: rgb(214, 231, 252);
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: black;
+}
+
+#Adresse {
+    background: rgb(214, 231, 252);
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: black;
+}
+
+
+#btn {
+    width: 91%;
+    margin: 0 16px;
+    background: #1f53c5;
+    border: 0;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#btn:hover {
+    width: 91%;
+    margin: 0 16px;
+    background: #00309B;
+    border: 0;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+}

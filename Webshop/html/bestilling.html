@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/bestilling.css">
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li class="cpu">
+                <a href="webshop.html">CPU</a>
+            </li>
+            <li class="Logg inn">
+                <a href="logg inn.html">Logg inn</a>
+            </li>
+            <li class="Kontakt">
+                <a href="kontakt.html">Kontakt</a>
+            </li>
+            <li class="Info">
+                <a href="info.html">Info</a>
+            </li>
+            <li class="Medlemmer">
+                <a href="medlemmer.html">Medlemmer</a>
+            </li>
+            <li class="Bestilling">
+                <a href="bestilling.html">Bestilling</a>
+            </li>
+    </div>
+
+    <center>
+        <div id="registerform">
+            <h5>Bestilling</h5>
+            <select>
+                <option>Intel core i3</option>
+                <option>Intel Core i5</option>
+                <option>Intel Core i7</option>
+                <option>Intel Core i9</option>
+            </select>
+            Antall:
+            <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>Maks 4 pr. Kunde</option>
+                </select>
+                <br>
+                <br>
+            <label>
+                <input id="Fornavn" type="text" placeholder="Fornavn"> </label>
+            <label>
+                <input id="Etternavn" type="text" placeholder="Etternavn"> </label>
+            <label>
+                <input id="Email" type="text" placeholder="Email"> </label>
+            <label>
+                <input id="Adresse" type="text" placeholder="Adresse"> </label>
+            <label>
+                <br>
+                <label>
+                    <input id="Betaling" type="radio" placeholder="Betaling:"> Bitcoin
+                <input id="Betaling" type="radio" placeholder="Betaling:"> Visa
+            <input id="Betaling" type="radio" placeholder="Betaling:"> Mastercard</label>
+            <br>
+            <br>
+            <label><input id="btn" type="button" value="Bestill"> </label>
+    </center>
+
+    <script>
+            let btn = document.getElementById("btn");
+            btn.addEventListener("click", lagreData);
+            function lagreData() {
+                let Fornavn = document.getElementById("Fornavn").value;
+                alert("Ugyldig betaling, vennligst prøv igjen senere " + "" + Fornavn + "!");
+            }
+        </script>
+</body>
+
+</html>

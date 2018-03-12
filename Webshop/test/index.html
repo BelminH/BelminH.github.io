@@ -1,26 +1,31 @@
-<html>
-  <head>
-    <title>Firebase Basic Chat Example</title>
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <!-- Custom JS -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="test.js"></script>
+    <title>Login Eksempel</title>
+</head>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="test.css">
-  </head>
+<body>
+    <div id="login" class="hidden">
+        <p>Enter an email and password below and either sign in to an existing account or sign up</p>
+        <input type="text" id="email" name="email" placeholder="Email">
+        <input type="password" id="password" name="password" placeholder="Password">
+        <button id="sign-in" name="signin">Sign In</button>
+        <button id="sign-up" name="signup">Sign Up</button>
+    </div>
+    <!-- Container where we'll display the user details -->
+    <div id="status" class="hidden">
 
-  <body>
-    <h1>Firebase Realtime Chat</h1>
+        <button id="signout" name="signout">Sign out</button>
+        <button id="mapper">Design a map</button>
+        <div id="games">
 
-    <div id="messagesDiv"></div>
+        </div>
+    </div>
+</body>
 
-    <input type="text" id="nameInput" placeholder="Name" />
-    <input type="text" id="messageInput" placeholder="Message..." />
-  </body>
 </html>
