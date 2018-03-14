@@ -16,7 +16,7 @@ function setup() {
     function visInnleggnr(snapshot) {
         let innleggnr = snapshot.key;
         let info = snapshot.val();
-        let ref2 = firebase.database().ref("bruker").orderByChild("brukernr").equalTo(info.brukernr);
+        let ref2 = firebase.database().ref("bruker/" + info.brukernr);
         ref2.once("value").then(function (snapshot) {
             let bruker = snapshot.val();
             if (bruker) {
