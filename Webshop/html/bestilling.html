@@ -8,6 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/bestilling.css">
+    <script src="../js/bestilling.js"></script>
+
+    <link rel="icon" href="../bilder/logo.ico">
 </head>
 
 <body>
@@ -36,49 +39,48 @@
     <center>
         <div id="registerform">
             <h5>Bestilling</h5>
-            <select>
-                <option>Intel core i3</option>
-                <option>Intel Core i5</option>
-                <option>Intel Core i7</option>
-                <option>Intel Core i9</option>
+            <select id="bestilling">
+                <option value="Intel Core i3">Intel Core i3</option>
+                <option value="Intel Core i5">Intel Core i5</option>
+                <option value="Intel Core i7">Intel Core i7</option>
+                <option value="Intel Core i9">Intel Core i9</option>
+                <option value="AMD Ryzen 3">AMD Ryzen 3</option>
+                <option value="AMD Ryzen 5">AMD Ryzen 5</option>
+                <option value="AMD Ryzen 7">AMD Ryzen 7</option>
             </select>
-            Antall:
-            <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>Maks 4 pr. Kunde</option>
-                </select>
-                <br>
-                <br>
+            <br>
             <label>
-                <input id="Fornavn" type="text" placeholder="Fornavn"> </label>
+                <input id="navn" type="text" placeholder="Fornavn"> </label>
             <label>
-                <input id="Etternavn" type="text" placeholder="Etternavn"> </label>
+                <input id="email" type="text" placeholder="Email"> </label>
             <label>
-                <input id="Email" type="text" placeholder="Email"> </label>
-            <label>
-                <input id="Adresse" type="text" placeholder="Adresse"> </label>
+                <input id="mobil" type="text" placeholder="Mobil"> </label>
             <label>
                 <br>
                 <label>
                     <input id="Betaling" type="radio" placeholder="Betaling:"> Bitcoin
-                <input id="Betaling" type="radio" placeholder="Betaling:"> Visa
-            <input id="Betaling" type="radio" placeholder="Betaling:"> Mastercard</label>
-            <br>
-            <br>
-            <label><input id="btn" type="button" value="Bestill"> </label>
+                    <input id="Betaling" type="radio" placeholder="Betaling:"> Visa
+                    <input id="Betaling" type="radio" placeholder="Betaling:"> Mastercard</label>
+                <br>
+                <br>
+                <label>
+                    <label>
+                            <label><a href="bekreftelse.html"><input id="lagrebestilling" type="button" value="Bestill"></a> </label>
     </center>
 
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
     <script>
-            let btn = document.getElementById("btn");
-            btn.addEventListener("click", lagreData);
-            function lagreData() {
-                let Fornavn = document.getElementById("Fornavn").value;
-                alert("Ugyldig betaling, vennligst prøv igjen senere " + "" + Fornavn + "!");
-            }
-        </script>
+        setup();
+    </script>
+
+<script>
+        let btn = document.getElementById("lagrebestilling");
+        btn.addEventListener("click", lagreData);
+        function lagreData() {
+            alert("Takk for bestilling, vi sender deg til bekreftelsen");
+        }
+    </script>
 </body>
 
 </html>

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../css/grid.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/webshop.css">
+    <link rel="stylesheet" href="../css/overlay.css">
+
+    <link rel="icon" href="../bilder/logo.ico">
 </head>
 
 <body>
@@ -36,11 +39,11 @@
     <main>
         <article>
             <div id="bilde1">
-                <p>Be ready for amazing experiences in gaming and entertainment wherever your computing takes you with
-                    the 8th Generation Intel® Core™ processor family.</p>
+                <p>Be ready for amazing experiences in gaming and entertainment wherever your computing takes you with the 8th
+                    Generation Intel® Core™ processor family.</p>
 
                 <label>
-                    <input id="btn1" type="button" value="Kjøp"> </label>
+                    <input id="btn1" onclick="off()" type="button" value="Kjøp"> </label>
             </div>
         </article>
         <article>
@@ -74,38 +77,49 @@
                     <input id="btn4" type="button" value="Kjøp"> </label>
             </div>
         </article>
+        <article>
+            <div id="slideshow"></div>
+        </article>
     </main>
 
-    <script>
-        let btn = document.getElementById("btn1");
-        btn.addEventListener("click", lagreData);
-        function lagreData() {
-            alert("Vi har problemer med nettsiden vår, vennligst prøv igjen senere");
-        }
-    </script>
-    <script>
-        let btn2 = document.getElementById("btn2");
-        btn2.addEventListener("click", lagreData);
-        function lagreData() {
-            alert("Vi har problemer med nettsiden vår, vennligst prøv igjen senere");
-        }
-    </script>
-    <script>
-        let btn3 = document.getElementById("btn3");
-        btn3.addEventListener("click", lagreData);
-        function lagreData() {
-            alert("Vi har problemer med nettsiden vår, vennligst prøv igjen senere");
-        }
-    </script>
-    <script>
-        let btn4 = document.getElementById("btn4");
-        btn4.addEventListener("click", lagreData);
-        function lagreData() {
-            alert("Vi har problemer med nettsiden vår, vennligst prøv igjen senere");
-        }
-    </script>
+    <div id="overlay1" onclick="off()">
+        <div id="text">Intel Core is a line of mid-to-high end consumer, workstation, and enthusiast central processing units (CPU) marketed
+            by Intel Corporation. These processors displaced the existing mid-to-high end Pentium processors of the time,
+            moving the Pentium to the entry level, and bumping the Celeron series of processors to low end. Identical or
+            more capable versions of Core processors are also sold as Xeon processors for the server and workstation markets.</div>
+    </div>
 
+    <div style="padding:20px">
+        <button id="btn1" onclick="on()">Mer Info</button>
+    </div>
+    <div id="overlay2" onclick="off()">
+    </div>
 
+    <div style="padding:20px">
+        <button id="btn2" onclick="on()">Mer Info</button>
+    </div>
+    <div id="overlay3" onclick="off()">
+    </div>
+
+    <div style="padding:20px">
+        <button id="btn3" onclick="on()">Mer Info</button>
+    </div>
+    <div id="overlay3" onclick="off()">
+    </div>
+
+    <div style="padding:20px">
+        <button id="btn4" onclick="on()">Mer Info</button>
+    </div>
+
+    <script>
+        function on() {
+            document.getElementById("overlay1").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay1").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>

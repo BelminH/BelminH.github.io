@@ -53,7 +53,7 @@ p {
     color: white;
     padding: 12px;
     font-size: 16px;
-    top: 22%;
+    top: 17%;
 }
 
 #btn1:hover {
@@ -65,7 +65,7 @@ p {
     color: white;
     padding: 12px;
     font-size: 16px;
-    top: 22%;
+    top: 17%;
 }
 
 #btn2 {
@@ -78,7 +78,7 @@ p {
     color: white;
     padding: 12px;
     font-size: 16px;
-    top: 47%;
+    top: 35%;
 }
 
 #btn2:hover {
@@ -90,7 +90,7 @@ p {
     color: white;
     padding: 12px;
     font-size: 16px;
-    top: 47%;
+    top: 35%;
 }
 
 #btn3 {
@@ -103,7 +103,7 @@ p {
     color: white;
     padding: 12px;
     font-size: 16px;
-    top: 70%;
+    top: 53%;
 }
 
 #btn3:hover {
@@ -115,7 +115,7 @@ p {
     color: white;
     padding: 12px;
     font-size: 16px;
-    top: 70%;
+    top: 53%;
 }
 
 #btn4 {
@@ -128,7 +128,7 @@ p {
     color: white;
     padding: 12px;
     font-size: 16px;
-    bottom: 4%;
+    bottom: 27%;
 }
 
 #btn4:hover {
@@ -140,6 +140,23 @@ p {
     color: white;
     padding: 12px;
     font-size: 16px;
-    bottom: 4%;
+    bottom: 27%;
 }
 
+#slideshow {
+    position: absolute;
+    width: 79em;
+    height: 448px;;
+    border-radius: 2em;
+    background-color: var(--slideshow-bg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    animation: slideshow 4s ease-in-out infinite alternate;
+}
+
+@keyframes slideshow {
+    0% { background-image: url(../bilder/i3.png)}
+    55% { background-image: url(../bilder/i5.png)}
+    75% { background-image: url(../bilder/i7.png)}
+    100% { background-image: url(../bilder/i9.png)}
+}

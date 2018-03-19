@@ -2,6 +2,7 @@
     position: absolute;
     top: 100%;
     left: 0%;
+    height: 29.5em;
     background: #364F6B;
     width: 76.3em;
     padding: 30px;
@@ -17,40 +18,7 @@
     font-weight: normal;
 }
 
-#Fornavn {
-    background: rgb(214, 231, 252);
-    border: 1px solid #1f53c5;
-    font-size: 18px;
-    width: 80%;
-    padding: 20px;
-    margin-bottom: 16px;
-    border-radius: 4px;
-    color: black;
-}
-
-#Etternavn {
-    background: rgb(214, 231, 252);
-    border: 1px solid #1f53c5;
-    font-size: 18px;
-    width: 80%;
-    padding: 20px;
-    margin-bottom: 16px;
-    border-radius: 4px;
-    color: black;
-}
-
-#Email {
-    background: rgb(214, 231, 252);
-    border: 1px solid #1f53c5;
-    font-size: 18px;
-    width: 80%;
-    padding: 20px;
-    margin-bottom: 16px;
-    border-radius: 4px;
-    color: black;
-}
-
-#Adresse {
+#navn {
     background: rgb(214, 231, 252);
     border: 1px solid #1f53c5;
     font-size: 18px;
@@ -62,7 +30,42 @@
 }
 
 
-#btn {
+#email {
+    background: rgb(214, 231, 252);
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: black;
+}
+
+#mobil {
+    background: rgb(214, 231, 252);
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: black;
+}
+
+#bestilling {
+    background: rgb(214, 231, 252);
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    width: 83%;
+    height: 13%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    color: black;
+}
+
+
+#lagrebestilling {
     width: 91%;
     margin: 0 16px;
     background: #1f53c5;
@@ -72,7 +75,7 @@
     font-size: 16px;
 }
 
-#btn:hover {
+#lagrebestillingtn:hover {
     width: 91%;
     margin: 0 16px;
     background: #00309B;

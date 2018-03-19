@@ -1,0 +1,61 @@
+{
+  "bestilling" : {
+    "Intel Core i7" : {
+      "email" : "belmin@epost.no",
+      "mobil" : "1243546576",
+      "navn" : "Belmin"
+    }
+  },
+  "bruker" : {
+    "1000" : {
+      "epost" : "admin@epost.no",
+      "mobil" : 328490238492,
+      "navn" : "Admin"
+    },
+    "1001" : {
+      "epost" : "kunde@epost.no",
+      "mobil" : 12435678,
+      "navn" : "Kunde"
+    },
+    "1002" : {
+      "epost" : "kunde@epost.no",
+      "mobil" : 23543412,
+      "navn" : "Kunde"
+    }
+  },
+  "innlegg" : {
+    "100102" : {
+      "brukernr" : 1001,
+      "forumnr" : 3347,
+      "melding" : "Hei, jeg har problemer med produktet mitt."
+    },
+    "100103" : {
+      "brukernr" : 1000,
+      "forumnr" : 3348,
+      "melding" : "Takk for at du kontaktet oss, vi vil ikke hjelpe deg."
+    },
+    "100104" : {
+      "brukernr" : 1002,
+      "forumnr" : 3349,
+      "melding" : "Dårlig kundeservice."
+    }
+  },
+  "varer" : {
+    "100" : {
+      "pris" : 1769,
+      "varenavn" : "Intel Core i3"
+    },
+    "101" : {
+      "pris" : 2479,
+      "varenavn" : "Intel Core i5"
+    },
+    "102" : {
+      "pris" : 2999,
+      "varenavn" : "Intel Core i7"
+    },
+    "103" : {
+      "pris" : 9726,
+      "varenavn" : "Intel Core i9"
+    }
+  }
+}
