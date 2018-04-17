@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fugl.css">
+</head>
+
+<body>
+    <video src="video/IT fugl.mp4"></video>
+    <div id="fugl"></div>
+
+    <script>
+        document.querySelector("body").addEventListener("click", start);
+        function start() {
+            let vid = document.querySelector("video");
+            vid.play();
+            vid.className = "started";
+            let fugl = document.querySelector("fugl");
+            fugl.className = "started";
+        }
+    </script>
+</body>
+
+</html>

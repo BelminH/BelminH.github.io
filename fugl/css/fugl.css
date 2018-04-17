@@ -1,0 +1,30 @@
+#fugl {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    background: url(bilder/bilde 1.png);
+    background-repeat: no-repeat;
+}  
+
+#fugl.started {
+    animation: walk 5s 4.1s forwards;
+}
+
+video.started {
+    opacity: 1;
+    animation: fade 4.5s linear forwards;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}
+@keyframes walk {
+    0% { opacity: 1; left: 50px;}
+    100% { opacity: 1; left: 400px;}
+}
+
+@keyframes fade {
+    99% { opacity: 1;}
+    100% { opacity: 0;}
+}
