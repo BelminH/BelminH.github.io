@@ -1,0 +1,11 @@
+#boks {
+    position: absolute;
+    width: 25em;
+    max-width: 85%;
+    padding: 5px;
+    border-radius: 5px; 
+    border: solid black 1px;
+    background: linear-gradient(135deg, rgba(26,235,89,0.59) 0%, rgba(52,201,98,0.59) 4%, rgba(116,115,119,0.65) 14%, rgba(199,4,147,0.77) 27%, rgba(24,180,20,1) 52%, rgba(10,194,10,1) 54%, rgba(42,186,222,1) 76%, rgba(42,105,213,1) 92%, rgba(42,64,209,1) 100%);
+}
+
+
