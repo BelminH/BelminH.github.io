@@ -1,0 +1,24 @@
+#main {
+    background: linear-gradient(45deg, rgba(248, 80, 50, 1) 0%, rgba(221, 0, 255, 1) 20%, rgba(138, 146, 181, 1) 35%, rgba(32, 199, 199, 1) 50%, rgba(42, 209, 42, 1) 65%, rgba(163, 209, 12, 1) 78%, rgba(230, 115, 39, 1) 92%, rgba(230, 115, 39, 1) 100%);
+    width: 600px;
+    height: 600px;
+}
+
+#board {
+    position: relative;
+    left: 25px;
+    top: 25px;
+    background-color: aliceblue;
+    width: 550px;
+    height: 550px;
+}
+
+.ball {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 0%;
+    top: 0%;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, rgba(172, 0, 199, 1) 0%, rgba(172, 0, 199, 1) 2%, rgba(255, 255, 255, 1) 25%, rgba(55, 204, 204, 1) 54%, rgba(60, 107, 60, 1) 73%, rgba(25, 204, 123, 1) 85%, rgba(248, 80, 50, 1) 100%);
+}
