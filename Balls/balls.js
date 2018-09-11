@@ -1,4 +1,34 @@
-// @ts-check
+//@ts-check
+
+// Her definerer vi egenskaper for en ball
+class Ball {
+    constructor(x, y, vx, vy, w = 26, h = 26) {
+        this.x = x;
+        this.y = y;
+        this.vx = vx;
+        this.vy = vy;
+        this.w = w;
+        this.h = h;
+        this.div = document.createElement("div");
+        this.div.className = "ball";
+    }
+    // oppdater posisjonen på nettsida
+    render() {
+        this.div.style.left = this.x + "px";
+        this.div.style.top = this.y + "px";
+    }
+    // oppdater x,y basert på farten til ballen
+    flytt() {
+        this.x += this.vx;
+        this.y += this.vy;
+    }
+    static leggtil() { }
+}
+
+
+
+// klargjør spillet - lag koblinger til html
+// setter opp slik at alt er klart
 function setup() {
     let divBoard = document.getElementById("board");
     let divMain = document.getElementById("main");
@@ -6,65 +36,100 @@ function setup() {
 
     btnStart.addEventListener("click", startSpillet);
 
+
+    // kobla til knappen som starter spillet
     function startSpillet(e) {
         divBoard.removeChild(btnStart);
+
+        divBoard.addEventListener("click", leggTilBall);
+
         let baller = [];
-        for (let i = 0; i < 10000; i++) {
-            let ball = document.createElement("div");
-            ball.className = "ball";
+        for (let i = 0; i < 1; i++) {
             let x = Math.random() * 520;
             let y = Math.random() * 520;
-            let vx = Math.random() * 50 - 25;
-            let vy = Math.random() * 50 - 25;
-            ball.dataset.vx = String(vx);
-            ball.dataset.vy = String(vy);
-            ball.dataset.x = String(x);
-            ball.dataset.y = String(y);
-            ball.dataset.w = "26";
-            ball.dataset.h = "26";
-            ball.style.left = x + "px";
-            ball.style.top = y + "px";
-            divBoard.appendChild(ball);
+            let vx = Math.random() * 10 - 5;
+            let vy = Math.random() * 10 - 5;
+            let ball = new Ball(x, y, vx, vy);
+            ball.render();
+            divBoard.appendChild(ball.div);
             baller.push(ball);
         }
 
         setInterval(animering, 20);
 
+        setInterval(addNewBalls, 50);
+
+        // nye baller legges til med en timer
+        function addNewBalls() {
+            if (baller.length > 20) return;
+            nyBall();
+        }
+
+        function leggTilBall(e) {
+            let x = e.offsetX;
+            let y = e.offsetY;
+            let vx = Math.random() * 10 - 5;
+            let vy = Math.random() * 10 - 5;
+            let ball = new Ball(x, y, vx, vy);
+            ball.render();
+            divBoard.appendChild(ball.div);
+            baller.push(ball);
+
+        }
+
+        function nyBall() {
+            let x = Math.random() * 524;
+            let y = Math.random() * 524;
+            let vx = Math.random() * 10 - 5;
+            let vy = Math.random() * 10 - 5;
+            let fart = Math.sqrt(vx * vx + vy * vy);
+            ball.div.style.backgroundColor=farge(fart);
+            let ball = new Ball(x, y, vx, vy);
+            ball.render();
+            divBoard.appendChild(ball.div);
+            baller.push(ball);
+        }
+
+        // vi skal flytte alle ballene som er på skjermen
+        // ballene er lagra i arrayet baller
+        // itererer gjennom arrayet og flytter hver enkelt ball
         function animering() {
-            for (let i = 0; i < 10000; i++) {
+            for (let i = 0; i < baller.length; i++) {
                 let ball = baller[i];
-                ball.dataset.x = +ball.dataset.x + +ball.dataset.vx;
-                ball.dataset.y = +ball.dataset.y + +ball.dataset.vy;
-                ball.style.left = ball.dataset.x + "px";
-                ball.style.top = ball.dataset.y + "px";
-
-                if (+ball.dataset.x > 550) {
-                    ball.dataset.vx = -ball.dataset.vx;
+                ball.flytt();
+                ball.render();
+                if (ball.x > 524) {
+                    ball.vx = -Math.abs(ball.vx);
                 }
-
-                if (+ball.dataset.x < 0) {
-                    ball.dataset.vx = Math.abs(+ball.dataset.vx);
+                if (ball.x < 0) {
+                    ball.vx = Math.abs(ball.vx);
                 }
-
-                if (+ball.dataset.y > 550) {
-                    ball.dataset.vy = -ball.dataset.vy;
+                if (ball.y > 524) {
+                    ball.vy = -Math.abs(ball.vy);
                 }
-
-                if (+ball.dataset.y < 0) {
-                    ball.dataset.vy = -ball.dataset.vy;
+                if (ball.y < 0) {
+                    ball.vy = Math.abs(ball.vy);
                 }
-
             }
-            for (let i = 0; i < 10000; i++) {
+            // sjekker kollisjon mellom ballene
+            // ball 1 sjekker mot ball 2,3,...
+            // ball 2 sjekker mot ball 3,4,...
+            // osv
+            for (let i = 0; i < baller.length; i++) {
                 let a = baller[i];
-                for (let j = i+1; j < 10000; j++) {
+                for (let j = i + 1; j < baller.length; j++) {
                     let b = baller[j];
-                    if (kollisjon(a.dataset, b.dataset)) {
-                        a.dataset.vx = -a.dataset.vx;
+                    if (kollisjon(a, b)) {
+                        // vi har oppdaga en kollisjon
+                        // vi bytter vx på ballene
+                        let v = a.vx;
+                        a.vx = b.vx;
+                        b.vx = v;
                     }
                 }
             }
         }
+
         function kollisjon(a, b) {
             if (
                 +a.x > +b.x - +a.w &&
@@ -79,4 +144,14 @@ function setup() {
         }
 
     }
+}
+
+function farge(fart) {
+    let f;
+    if (fart < 5) {
+        f = "red";
+    } else {
+        f = "blue";
+    }
+    return f;
 }
