@@ -3,3 +3,43 @@
     height: 16px;
     border: solid black 1px;
 }
+
+.soyle.green {
+    background-color: green;
+}
+
+.soyle.yellow {
+    background-color: yellow;
+}
+form {
+    position: relative;
+    width: 25em;
+    max-width: 85%;
+    padding: 5px;
+    border-radius: 5px; 
+    border: solid black 1px;
+    background-color: gainsboro;
+}
+
+form > label {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px; 
+    border: solid black 1px;
+    background-color: cornsilk;
+}
+
+form::after {
+    color: blue;
+    content: "Registrering";
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+
+#main {
+    margin: 1.2em;
+}
+
