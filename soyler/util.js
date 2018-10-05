@@ -34,9 +34,15 @@ function lagSoyle(bredde) {
     let div = document.createElement("div");
     div.className = "soyle";
     div.style.width = bredde + "px";
-    return div; 
+    return div;
 }
 
-function setEtikkett (soyle, navn) {
+function setEtikkett(soyle, navn) {
     soyle.innerHTML = niceName(navn);
+}
+
+function bmi(person) {
+    let h = person.hoyde / 100;
+    let bmiVerdi = person.vekt / (h*h);
+    return bmiVerdi;
 }

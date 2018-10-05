@@ -39,7 +39,7 @@ function setup() {
         for (let i = 0; i < personer.length; i++) {
             let p = personer[i];
             let s = lagSoyle(p.hoyde * 2);
-            setEtikkett(s, p.fornavn);
+            setEtikkett(s,p.fornavn + " bmi: " + (bmi(p)).toFixed(1) );
             divMain.appendChild(s);
         }
     }
