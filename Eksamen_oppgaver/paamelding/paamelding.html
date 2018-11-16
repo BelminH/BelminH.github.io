@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="paamelding.css">
+    <script src="paamelding.js"></script>
+    <title>Registrer</title>
+</head>
+
+<body>
+    <h1>Påmelding</h1>
+    <div id="registrer">
+        <form id="reg">
+            <label for="voksne">Antall voksne<input type="number" id="voksne"></label>
+            <label for="barn">Antall barn<input type="number" id="barn"></label>
+            <select id="forestillinger">
+                <option value="">velg</option>
+                <option value="sang">sang</option>
+                <option value="dangs">dans</option>
+                <option value="sangdans">sangOgDans</option>
+            </select>
+            <label for="lagre"><button type="button" id="lagre">Lagre</button></label>
+        </form>
+
+        <div id="oversikt">
+
+        </div>
+    </div>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>
