@@ -1,0 +1,12 @@
+main {
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px 90px 90px;
+    grid-column-gap: 15px;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(60px,auto);
+}
+
+h1 {
+    position: relative;
+    left: 35%;
+}

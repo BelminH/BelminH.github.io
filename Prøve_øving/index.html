@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="prøve.css">
+    <script src="prøve.js"></script>
+    <title>Registrer</title>
+</head>
+
+<body>
+    <h1>Påmelding</h1>
+    <div id="registrer">
+        <form id="reg">
+            <label for="voksne">Antall<input type="number" id="voksne"></label>
+            <label for="voksne">Vare Type 
+            <select id="kato">
+                <option value=""> ----- Velg Varer -----</option>
+                <option value="Elektro" id="elektro">Elektro</option>
+                <option value="klær" id="klær">klær</option>
+                <option value="Brus" id="brus">Brus</option>
+            </select>
+            </label>
+            <label for="lagre"><button type="button" id="lagre">Lagre</button></label>
+        </form>
+
+        <div id="oversikt">
+
+        </div>
+    </div>
+    <script>
+        setup();
+    </script> 
+
+</body>
+
+</html>
