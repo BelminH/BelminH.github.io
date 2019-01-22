@@ -1,9 +1,10 @@
-//@ts-check
+// @ts-check
 class HomeBar extends HTMLElement {
     constructor() {
       super();
       const title = this.getAttribute("title") || "Demo";
-      const username = this.getAttribute("username") || "Ben";
+      const username = this.getAttribute("username") || "Ole";
+      
       const menu = this.getAttribute("menu") || "Home";
 
       let now = new Date();
@@ -13,7 +14,8 @@ class HomeBar extends HTMLElement {
 
       const mnames = "Jan,Feb,Mar,Apr,Mai,Jun,Jul,Aug,Sep,Okt,Nov,Des".split(",");
 
-      const info = this.getAttribute("info") || `${day}. ${ mnames[month]} ${year}`;
+      const info = this.getAttribute("info") 
+           || `${day} ${  mnames[month]    } ${year}`;
 
       this._root = this.attachShadow({ mode: "open" });
 
@@ -34,7 +36,6 @@ class HomeBar extends HTMLElement {
                   color: #fff;
                   overflow:hidden;
               }
-  
               #home > div {
                   font-size: 1.2em;
                   height: 32px;
