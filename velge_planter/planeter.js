@@ -71,9 +71,9 @@ function setup() {
     }
 
     /**
-     * Lager en running som tilsvarer bef. i et valgt planet
+     * Lager en running som tilsvarer diameter. i et valgt planet
      * @param {Planet} planet   Navn på et planet som skal finnes i planetListe
-     * @param {number} max  maksimum bef for valgte planet
+     * @param {number} max  maksimum diamter for valgte planet
      */
     function lagRunning(planet, max) {
         let radius = Math.sqrt(200 * 200 * (+planet.diameter / max));
@@ -81,11 +81,7 @@ function setup() {
         sirkel.className = "sirkel";
         divGrafikk.appendChild(sirkel);
         sirkel.style.width = sirkel.style.height = radius + "px";
-
-        var carName = "Volvo";
-        document.getElementById("demo").innerHTML = carName;
     }
-
 
     function visListe() {
 
@@ -94,6 +90,8 @@ function setup() {
             s += `<option>${planet.navn}</option>`;
         })
         selL1.innerHTML = selL2.innerHTML = selL3.innerHTML = selL4.innerHTML = s;
+
     }
 
 }
+
