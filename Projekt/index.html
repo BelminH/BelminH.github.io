@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/projekt.css">
+    <!--Legge til en google font link for å forandre på hvilke type tekst vi bruker-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="./js/poeng.js"></script>
+    <!--<link rel="stylesheet" href="./html/projekt.html">-->
+    <title>projekt</title>
+</head>
+
+<body>
+    <h2 id="status">Flytt musepekeren på "S" for å begynne.</h2>
+
+    <!-- Dette lager veggene for spillet -->
+    <div id="maze">
+        <div id="start">S</div>
+        <div class="boundary" id="boundary1"></div>
+        <div class="boundary"></div>
+        <div class="boundary"></div>
+        <div class="boundary"></div>
+        <div class="boundary"></div>
+        <div id="end">E</div>
+    </div>
+
+    <p>
+        Målet med spillet er å få musepekeren over til E, men du kan ikke treffe veggene, lykke til!
+    </p>
+
+    <div class="poeng">Poeng:</div>
+</body>
+
+<script src="./js/index.js"></script>
+
+</html>

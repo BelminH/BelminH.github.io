@@ -1,0 +1,49 @@
+div#background {
+    background-image: url('../bilder/background_1.png');
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#pilot {
+    width: 50px;
+    height: 50px;
+    background-image: url('../bilder/hero.png');
+    position: absolute;
+    left: 600px;
+    top: 550px;
+}
+
+div#missiles {
+    width: 1200px;
+    height: 648px;
+    position: absolute;
+}
+
+div.missile1 {
+    width: 10px;
+    height: 28px;
+    background-image: url('../bilder/missile1.png');
+    position: absolute;
+}
+
+div#fiende {
+    width: 1200px;
+    height: 648px;
+    position: absolute;
+}
+
+div.enemy {
+    width: 50px;
+    height: 50px;
+    background-image: url('../bilder/enemy.png');
+    position: absolute;
+}
