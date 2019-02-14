@@ -1,0 +1,23 @@
+@keyframes bevegelse {
+    0% {
+        left: -230px;
+    }
+    50% {
+        left: 250px;
+    }
+    51% {
+        left: 250px;
+    }
+    100% {
+        left: -230px;
+    }
+}
+
+@keyframes missiles {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 200px;
+    }
+}

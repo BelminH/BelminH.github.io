@@ -1,27 +1,26 @@
 // @ts-check
-
 var pilot = {
     left: 600,
     top: 550
 };
 var missiles = [];
 var fiende = [
-    { left: 250, top: 100 },
-    { left: 350, top: 100 },
-    { left: 450, top: 100 },
-    { left: 550, top: 100 },
-    { left: 650, top: 100 },
-    { left: 750, top: 100 },
-    { left: 850, top: 100 },
-    { left: 950, top: 100 },
-    { left: 250, top: 175 },
-    { left: 350, top: 175 },
-    { left: 450, top: 175 },
-    { left: 550, top: 175 },
-    { left: 650, top: 175 },
-    { left: 750, top: 175 },
-    { left: 850, top: 175 },
-    { left: 950, top: 175 }
+    { left: 250, top: 75 },
+    { left: 350, top: 75 },
+    { left: 450, top: 75 },
+    { left: 550, top: 75 },
+    { left: 650, top: 75 },
+    { left: 750, top: 75 },
+    { left: 850, top: 75 },
+    { left: 950, top: 75 },
+    { left: 250, top: 160 },
+    { left: 350, top: 160 },
+    { left: 450, top: 160 },
+    { left: 550, top: 160 },
+    { left: 650, top: 160 },
+    { left: 750, top: 160 },
+    { left: 850, top: 160 },
+    { left: 950, top: 160 },
 ];
 
 document.onkeydown = function (e) {
@@ -56,8 +55,11 @@ function drawMissiles() {
 // farten paa missilene
 function moveMissiles() {
     for (var i = 0; i < missiles.length; i++) {
-        missiles[i].top = missiles[i].top - 8
+        missiles[i].top = missiles[i].top - 15
     }
+}
+if (missiles.length > 10) {
+    var removed = missiles.splice(0);
 }
 function drawFiende() {
     document.getElementById('fiende').innerHTML = ""
@@ -87,13 +89,39 @@ function collisionDetection() {
     }
 }
 // farten paa spillet 
-function gameLoop() {
+/*function gameLoop() {
     setTimeout(gameLoop, 950)
+    //moveFiende();
+    //drawFiende();
+    //collisionDetection();
+
+    console.log("Game loop")
+}*/
+// for aa faa en jevn skyting 
+function skyting() {
     moveMissiles();
     drawMissiles();
-    moveFiende();
-    drawFiende();
     collisionDetection();
+    requestAnimationFrame(skyting);
 }
 
-gameLoop()
+function test() {
+    // moveFiende flytter den nedover
+    //moveFiende();
+    // flytter den fra side til side
+    drawFiende();
+    requestAnimationFrame(test);
+}
+
+requestAnimationFrame(skyting);
+requestAnimationFrame(test);
+//gameLoop();
+
+// animasjon med "delay"
+/*function setup() {
+    document.getElementById('fiende').style.animation = 'bevegelse 7.5s 0.8s infinite'
+}*/
+
+function setup() {
+    document.getElementById('fiende').style.animation = 'bevegelse 7.5s infinite'
+}
