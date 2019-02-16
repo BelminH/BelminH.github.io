@@ -12,12 +12,3 @@
         left: -230px;
     }
 }
-
-@keyframes missiles {
-    0% {
-        top: -100px;
-    }
-    100% {
-        top: 200px;
-    }
-}

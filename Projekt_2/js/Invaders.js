@@ -107,7 +107,7 @@ function skyting() {
 
 function test() {
     // moveFiende flytter den nedover
-    //moveFiende();
+    // moveFiende();
     // flytter den fra side til side
     drawFiende();
     requestAnimationFrame(test);
@@ -125,3 +125,4 @@ requestAnimationFrame(test);
 function setup() {
     document.getElementById('fiende').style.animation = 'bevegelse 7.5s infinite'
 }
+

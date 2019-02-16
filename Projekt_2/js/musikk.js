@@ -1,4 +1,4 @@
-function myFunction() {
-    var x = document.getElementById("lyd").autoplay;
-    document.getElementById("demo").innerHTML = x;
-}
+// musikk
+//let lyd = document.getElementById("lyd");
+//let lyd = document.createElement("audio");
+//lyd.play();

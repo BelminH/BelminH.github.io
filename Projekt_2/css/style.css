@@ -6,7 +6,6 @@ div#background {
     height: auto;
     margin: 0;
     padding: 0;
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,4 +45,8 @@ div.enemy {
     height: 50px;
     background-image: url('../bilder/enemy.png');
     position: absolute;
+}
+
+#btnPlay {
+    visibility: hidden
 }
