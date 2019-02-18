@@ -88,16 +88,7 @@ function collisionDetection() {
         }
     }
 }
-// farten paa spillet 
-/*function gameLoop() {
-    setTimeout(gameLoop, 950)
-    //moveFiende();
-    //drawFiende();
-    //collisionDetection();
 
-    console.log("Game loop")
-}*/
-// for aa faa en jevn skyting 
 function skyting() {
     moveMissiles();
     drawMissiles();
@@ -105,16 +96,16 @@ function skyting() {
     requestAnimationFrame(skyting);
 }
 
-function test() {
+function side() {
     // moveFiende flytter den nedover
     // moveFiende();
     // flytter den fra side til side
     drawFiende();
-    requestAnimationFrame(test);
+    requestAnimationFrame(side);
 }
 
 requestAnimationFrame(skyting);
-requestAnimationFrame(test);
+requestAnimationFrame(side);
 //gameLoop();
 
 // animasjon med "delay"
@@ -123,6 +114,5 @@ requestAnimationFrame(test);
 }*/
 
 function setup() {
-    document.getElementById('fiende').style.animation = 'bevegelse 7.5s infinite'
+    document.getElementById('fiende').style.animation = 'bevegelse 7.5s'
 }
-

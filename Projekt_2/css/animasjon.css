@@ -1,14 +1,29 @@
 @keyframes bevegelse {
     0% {
-        left: -230px;
+        left: -230px; top: 0%;
     }
     50% {
-        left: 250px;
+        left: 250px; top: 0%;
     }
     51% {
-        left: 250px;
+        left: 250px; top: 50px;
     }
     100% {
-        left: -230px;
+        left: -230px; top: 50px;
+    }
+}
+
+@keyframes bevegelse_1 {
+    0% {
+        left: 250px; top: 50px;
+    }
+    50% {
+        left: -230px; top: 50px;
+    }
+    51% {
+        left: 250px; top: 100px;
+    }
+    100% {
+        left: -230px; top: 100px;
     }
 }
