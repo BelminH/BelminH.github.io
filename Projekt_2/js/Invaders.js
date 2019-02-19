@@ -108,11 +108,10 @@ requestAnimationFrame(skyting);
 requestAnimationFrame(side);
 //gameLoop();
 
-// animasjon med "delay"
-/*function setup() {
-    document.getElementById('fiende').style.animation = 'bevegelse 7.5s 0.8s infinite'
-}*/
-
 function setup() {
     document.getElementById('fiende').style.animation = 'bevegelse 23s forwards'
 }
+// musikk
+//let lyd = document.getElementById("lyd");
+//let lyd = document.createElement("audio");
+//lyd.play();
