@@ -52,7 +52,7 @@ function drawMissiles() {
         document.getElementById('missiles').innerHTML += `<div class='missile1' style='left:${missiles[i].left}px; top:${missiles[i].top}px'></div>`;
     }
 }
-
+// farten paa missilene
 function moveMissiles() {
     for (var i = 0; i < missiles.length; i++) {
         missiles[i].top = missiles[i].top - 15
@@ -74,7 +74,7 @@ function moveFiende() {
 }
 
 function collisionDetection() {
-    for (var enemy = fiende.length-1; enemy >=0 ; enemy--) {
+    for (var enemy = 0; enemy < fiende.length; enemy++) {
         for (var missile = 0; missile < missiles.length; missile++) {
             if (
                 missiles[missile].left >= fiende[enemy].left &&
@@ -84,7 +84,6 @@ function collisionDetection() {
             ) {
                 fiende.splice(enemy, 1);
                 missiles.splice(missile, 1);
-                break;
             }
         }
     }
@@ -98,6 +97,9 @@ function skyting() {
 }
 
 function side() {
+    // moveFiende flytter den nedover
+    // moveFiende();
+    // flytter den fra side til side
     drawFiende();
     requestAnimationFrame(side);
 }
@@ -108,3 +110,7 @@ requestAnimationFrame(side);
 function setup() {
     document.getElementById('fiende').style.animation = 'bevegelse 32s forwards'
 }
+// musikk
+//let lyd = document.getElementById("lyd");
+//let lyd = document.createElement("audio");
+//lyd.play();
