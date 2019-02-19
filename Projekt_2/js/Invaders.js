@@ -114,5 +114,5 @@ requestAnimationFrame(side);
 }*/
 
 function setup() {
-    document.getElementById('fiende').style.animation = 'bevegelse 7.5s'
+    document.getElementById('fiende').style.animation = 'bevegelse 23s forwards'
 }
