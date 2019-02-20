@@ -108,7 +108,8 @@ requestAnimationFrame(skyting);
 requestAnimationFrame(side);
 
 function setup() {
-    document.getElementById('fiende').style.animation = 'bevegelse 32s forwards'
+    document.getElementById('fiende').style.animation = 'bevegelse 32s forward';
+    document.querySelectorAll(".enemy").style.animation = 'bevegelse 32s forward';
 }
 // musikk
 //let lyd = document.getElementById("lyd");
