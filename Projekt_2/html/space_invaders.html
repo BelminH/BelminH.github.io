@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/animasjon.css">
     <script src="../js/Invaders.js"></script>
     <!--<audio type="audio/mpeg" id="lyd" src="../musikk/space.mp3"></audio>-->
+    <iframe src="../musikk/space.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
 </head>
 
 <body>
@@ -19,6 +21,9 @@
     <div id="boks"></div>
 
 </body>
+    <audio id="player" autoplay loop>
+    <source src="audio/source.mp3" type="audio/mp3">
+</audio>
 <script>
     setup();
 </script>
