@@ -42,6 +42,7 @@ document.onkeydown = function (e) {
     }
     drawPilot();
 }
+
 function drawPilot() {
     document.getElementById('pilot').style.left = pilot.left + 'px';
     document.getElementById('pilot').style.top = pilot.top + 'px';
@@ -52,7 +53,7 @@ function drawMissiles() {
         document.getElementById('missiles').innerHTML += `<div class='missile1' style='left:${missiles[i].left}px; top:${missiles[i].top}px'></div>`;
     }
 }
-
+// farten paa missilene
 function moveMissiles() {
     for (var i = 0; i < missiles.length; i++) {
         missiles[i].top = missiles[i].top - 15
@@ -74,7 +75,7 @@ function moveFiende() {
 }
 
 function collisionDetection() {
-    for (var enemy = fiende.length-1; enemy >=0 ; enemy--) {
+    for (var enemy = fiende.length - 1; enemy >= 0; enemy--) {
         for (var missile = 0; missile < missiles.length; missile++) {
             if (
                 missiles[missile].left >= fiende[enemy].left &&
@@ -98,6 +99,9 @@ function skyting() {
 }
 
 function side() {
+    // moveFiende flytter den nedover
+    // moveFiende();
+    // flytter den fra side til side
     drawFiende();
     requestAnimationFrame(side);
 }
@@ -108,3 +112,18 @@ requestAnimationFrame(side);
 function setup() {
     document.getElementById('fiende').style.animation = 'bevegelse 32s forwards'
 }
+// musikk
+//let lyd = document.getElementById("lyd");
+//let lyd = document.createElement("audio");
+//lyd.play();
+
+
+/*var direction = 1;
+function drawFiende() {
+    document.getElementById('fiende').innerHTML = '';
+    if (fiende[0].left === [maxWidth]) { maxWidth is the max left position direction = -1; }
+    for (var i = 0; i < fiende.length; i++) {
+        fiende[i].left += direction * 2; fiende[i].top += 2; document.getElementById('fiende').innerHTML += <div class='enemy' style='left:${fiende[i].left}px; top:${fiende[i].top}px'></div>;
+    }
+}
+setInterval(() => { drawFiende(); }, 200);*/
