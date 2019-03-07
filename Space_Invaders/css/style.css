@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    left: 12vh;
     position: absolute;
     margin:50px 0; 
     padding:0;
