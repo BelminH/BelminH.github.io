@@ -1,13 +1,15 @@
 level = 0;
 score = 0;
+
+// prøvde å få fienden til å lage en eksplosjon når de døde, men kom ingen vei her
 var explodedPlayer = new Image();
-explodedPlayer.src = "../img/xp.png";
+explodedPlayer.src = "../img/bang.png";
 var explosiongreen = new Image();
-explosiongreen.src = "alienexplosiongreen.png";
+explosiongreen.src = "../img/bang.png";
 var explosionyellow = new Image();
-explosionyellow.src = "alienexplosionyelow.png";
+explosionyellow.src = "../img/bang.png";
 var explosionwhite = new Image();
-explosionwhite.src = "alienexplosionwhite.png";
+explosionwhite.src = "../img/bang.png";
 function startGame() {
   gamearea.start();
 }
@@ -15,12 +17,14 @@ function shootPlayer() {
   ind = Math.floor(Math.random() * aliens.length);
   if (aliens[ind].type != '0' && aliens[ind].type != 'x') aliens[ind].shoot();
 }
+// oppdaterer poeng systemet
 function updateScore() {
   gamearea.context.clearRect(900, 0, 200, 150);
   gamearea.context.fillStyle = "Chartreuse";
   gamearea.context.font = "bold 30px Consolas";
   gamearea.context.fillText("Score: " + score, 900, 50);
 }
+// oppdatere liv
 function updateLifes() {
   gamearea.context.clearRect(500, 0, 200, 150);
   gamearea.context.fillStyle = "Chartreuse";
@@ -44,6 +48,7 @@ function movePlayer(event) {
     player.moving = true;
   }
 }
+// stopper spilleren sånn at den ikke går hele tiden
 function stopPlayer(event) {
   clearInterval(moveInterval);
   player.moving = false;
@@ -55,12 +60,6 @@ var gamearea = {
     this.canvas.width = 1100;
     this.canvas.height = 600;
     this.canvas.style.backgroundColor = "black";
-    this.canvas.style.display = "block";
-    this.canvas.style.top = "20%";
-    this.canvas.style.left = "30%";
-    this.canvas.style.margin = "-20px";
-    this.canvas.style.padding = "0";
-    this.canvas.style.position = "absolute";
     document.body.insertBefore(this.canvas, document.body.childNodes[0]);
     this.context = this.canvas.getContext("2d");
     player.draw();
