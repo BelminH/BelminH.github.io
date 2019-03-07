@@ -60,6 +60,7 @@ var gamearea = {
     this.canvas.width = 1100;
     this.canvas.height = 600;
     this.canvas.style.backgroundColor = "black";
+    this.canvas.style.top = "0%";
     document.body.insertBefore(this.canvas, document.body.childNodes[0]);
     this.context = this.canvas.getContext("2d");
     player.draw();
