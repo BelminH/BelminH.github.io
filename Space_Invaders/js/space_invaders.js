@@ -3,7 +3,7 @@ score = 0;
 
 // prøvde å få fienden til å lage en eksplosjon når de døde, men kom ingen vei her
 var explodedPlayer = new Image();
-explodedPlayer.src = "../img/bang.png";
+explodedPlayer.src = "../img/red.JPG";
 var explosiongreen = new Image();
 explosiongreen.src = "../img/bang.png";
 var explosionyellow = new Image();
