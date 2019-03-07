@@ -112,12 +112,6 @@ requestAnimationFrame(side);
 function setup() {
     document.getElementById('fiende').style.animation = 'bevegelse 32s forwards'
 }
-// musikk
-//let lyd = document.getElementById("lyd");
-//let lyd = document.createElement("audio");
-//lyd.play();
-
-
 /*var direction = 1;
 function drawFiende() {
     document.getElementById('fiende').innerHTML = '';
