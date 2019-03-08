@@ -55,6 +55,7 @@ function stopPlayer(event) {
 }
 var gamearea = {
   // området for hvor spillet er på 
+  // veridene til canvas
   canvas: document.createElement("canvas"),
   start: function () {
     this.canvas.width = 1100;
@@ -144,7 +145,7 @@ function displayAlien() {
   }
   shiftShape++;
 }
-
+// prøve å få 3 ulike aliens, men det ble ikke noe av
 function alien(type) {
   this.type = type; this.score = 0;
   this.draw = function (x, y, shape) {
@@ -181,6 +182,7 @@ function alien(type) {
     alienBullet.interval = setInterval(function () { alienBullet.update(); }, 20);
   }
 }
+// velger farten til skuddet
 function bullet(x, y, speed) {
   this.x = x; this.y = y; this.interval = 0;
   this.update = function () {
