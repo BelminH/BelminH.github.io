@@ -1,0 +1,34 @@
+#main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#bilde {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    left: -10px;
+}
+
+#mølle {
+    position: absolute;
+    height: 60%;
+    width: 30%;
+    bottom: 0%;
+    right: 5%;
+}
+
+#turbin {
+    transform-origin: 40% 40%;
+    position: absolute;
+    height: 60%;
+    width: 30%;
+    bottom: 0%;
+    right: 5%;
+    animation: turbin_ 4s linear infinite;
+}
+
+@keyframes turbin_ { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
