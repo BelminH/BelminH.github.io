@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Oppg 3</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="byvalg">
+            Velg destinasjon:
+            <select name="by" id="by">
+                <option value="">.. Velg by ..</option>
+                <option value="roma">Roma</option>
+                <option value="amsterdam">Amsterdam</option>
+                <option value="newyork">New York</option>
+            </select>
+        </div>
+        <form onchange=vispris() id="skjema">
+            <h4>Gjør valg for din reise</h4>
+
+            Velg periode:
+            <select name="periode" id="periode">
+                <option value="v">Vinter</option>
+                <option value="s">Sommer</option>
+            </select>
+
+            <br> Velg antall dobbeltrom:
+            <select name="dobbelt" id="dobbelt">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <br> Velg antall enkeltrom:
+            <select name="enkelt" id="enkelt">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <br> Velg hotell:
+            <select name="hotell" id="hotell">
+                <option value="aurora">aurora</option>
+                <option value="downtown">downtown</option>
+                <option value="cityhall">cityhall</option>
+            </select>
+
+            <br> Vil du ha kulturpass? (Ja):
+            <input type="checkbox" name="kultur" id="kultur">
+
+            <br>
+            <button type="button" id="lagre">Lagre bestilling</button>
+        </form>
+
+        <p>
+            <div>
+                Prisen på dine valg er <span id="pris">0</span> kr.
+            </div>
+
+    </div>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

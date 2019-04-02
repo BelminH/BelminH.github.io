@@ -1,0 +1,7 @@
+#skjema {
+    display: none;
+}
+
+#skjema.valgt {
+    display: block;
+}
